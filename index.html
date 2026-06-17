@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Révisez toutes les matières du Brevet des collèges (DNB) avec des fiches de révision interactives et des quiz. Français, Maths, Histoire-Géo, Sciences et plus.">
+    <meta name="keywords" content="brevet, DNB, révision, collège, 3ème, français, mathématiques, histoire, géographie, sciences, quiz">
+    <title>BrevetMaster — Révise ton Brevet DNB</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+    </div>
+    <div class="bg-grid"></div>
+
+    <!-- App -->
+    <div class="app" id="app">
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-brand" id="nav-home" onclick="navigateHome()">
+                <div class="nav-logo">B</div>
+                <div>
+                    <div class="nav-title">BrevetMaster</div>
+                    <div class="nav-subtitle">Révisions DNB 2026</div>
+                </div>
+            </div>
+            <div class="nav-actions">
+                <div class="nav-search" id="nav-search-wrapper">
+                    <span class="nav-search-icon">🔍</span>
+                    <input type="text" id="search-input" placeholder="Rechercher un chapitre..." autocomplete="off">
+                    <div class="search-results" id="search-results"></div>
+                </div>
+                <button class="nav-progress-btn" id="progress-btn" onclick="toggleProgress()">
+                    <span>📊</span>
+                    <span id="global-progress-text">0%</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Home View -->
+        <div class="home-view" id="home-view">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="hero-badge">
+                    <span class="pulse"></span>
+                    Session de révisions 2026
+                </div>
+                <h1>Réussis ton <span class="gradient-text">Brevet</span> 🎯</h1>
+                <p>Fiches de révision complètes, quiz interactifs et suivi de progression pour toutes les matières du DNB.</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="stat-subjects">8</div>
+                        <div class="hero-stat-label">Matières</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="stat-chapters">0</div>
+                        <div class="hero-stat-label">Chapitres</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="stat-fiches">0</div>
+                        <div class="hero-stat-label">Fiches</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="stat-quiz">0</div>
+                        <div class="hero-stat-label">Questions</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Subjects Grid -->
+            <section class="section">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title">Tes matières</h2>
+                        <p class="section-subtitle">Choisis une matière pour commencer à réviser</p>
+                    </div>
+                </div>
+                <div class="subjects-grid" id="subjects-grid"></div>
+            </section>
+        </div>
+
+        <!-- Subject View (populated dynamically) -->
+        <div class="subject-view" id="subject-view"></div>
+    </div>
+
+    <!-- Progress Modal -->
+    <div class="modal-overlay" id="progress-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">📊 Ta progression</h3>
+                <button class="modal-close" onclick="toggleProgress()">✕</button>
+            </div>
+            <div class="progress-overview">
+                <div class="progress-circle">
+                    <svg viewBox="0 0 80 80">
+                        <defs>
+                            <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#4f8ff7"/>
+                                <stop offset="100%" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                        <circle class="bg" cx="40" cy="40" r="34"/>
+                        <circle class="fill" id="progress-circle-fill" cx="40" cy="40" r="34" 
+                                stroke-dasharray="213.6" stroke-dashoffset="213.6"/>
+                    </svg>
+                    <span class="progress-circle-text" id="progress-circle-text">0%</span>
+                </div>
+                <div class="progress-info">
+                    <h4>Progression globale</h4>
+                    <p id="progress-detail">0 quiz complétés</p>
+                    <div style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+                        <button onclick="exportProgress()" style="padding: 8px 12px; background: var(--bg-hover); border: 1px solid var(--border); border-radius: 8px; color: var(--text); cursor: pointer; font-size: 0.9rem;">📥 Exporter</button>
+                        <label style="padding: 8px 12px; background: var(--bg-hover); border: 1px solid var(--border); border-radius: 8px; color: var(--text); cursor: pointer; font-size: 0.9rem;">
+                            📤 Importer
+                            <input type="file" id="import-file" accept=".json" style="display: none;" onchange="importProgress(event)">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-subjects" id="progress-subjects"></div>
+        </div>
+    </div>
+
+    <!-- Data Scripts -->
+    <script src="js/data/francais.js"></script>
+    <script src="js/data/maths.js"></script>
+    <script src="js/data/histoire.js"></script>
+    <script src="js/data/geographie.js"></script>
+    <script src="js/data/emc.js"></script>
+    <script src="js/data/physique-chimie.js"></script>
+    <script src="js/data/svt.js"></script>
+    <script src="js/data/technologie.js"></script>
+    <!-- Main App Script -->
+    <script src="js/app.js"></script>
+</body>
+</html>
