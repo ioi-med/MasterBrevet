@@ -68,351 +68,129 @@ const PHYSIQUE_CHIMIE_DATA = {
     }
   ,
 {
+    "id": "pc-ch3",
+    "title": "L'énergie et ses conversions",
+    "summary": "Énergie cinétique, potentielle, électrique, puissance...",
+    "fiches": [
+        {
+            "title": "Les formes d'énergie",
+            "content": "<h3>L'énergie cinétique et de position</h3><p>L'énergie cinétique (Ec) est liée à la vitesse d'un objet (Ec = 1/2 × m × v²). L'énergie potentielle de position (Ep) est liée à l'altitude. L'énergie mécanique (Em) est la somme des deux (Em = Ec + Ep).</p>"
+        },
+        {
+            "title": "Électricité",
+            "content": "<h3>Tension et intensité</h3><p>La tension (U) s'exprime en Volts et se mesure avec un voltmètre en dérivation. L'intensité (I) s'exprime en Ampères et se mesure avec un ampèremètre en série. Loi d'Ohm : <span class=\"formula\">U = R × I</span>.</p>"
+        }
+    ],
+    "quiz": [
+        {
+            "question": "Quelle est l'unité de l'énergie ?",
+            "options": ["Le Watt", "Le Joule", "Le Volt", "L'Ampère"],
+            "correct": 1,
+            "explanation": "L'énergie se mesure en Joules (J)."
+        },
+        {
+            "question": "De quoi dépend l'énergie cinétique ?",
+            "options": ["De la masse et de l'altitude", "De la masse et de la vitesse", "Uniquement de la vitesse", "De la température"],
+            "correct": 1,
+            "explanation": "La formule est Ec = 1/2 × m × v², elle dépend donc de la masse et de la vitesse au carré."
+        },
+        {
+            "question": "Comment se branche un ampèremètre ?",
+            "options": ["En série", "En dérivation", "En parallèle", "Sur n'importe quel fil"],
+            "correct": 0,
+            "explanation": "L'ampèremètre mesure le débit de courant, il doit donc être placé en série dans le circuit."
+        }
+    ]
+},
+{
+    "id": "physique-chimie-supplementaire",
+    "title": "Chapitre Supplémentaire : Les signaux (Son et Lumière)",
+    "summary": "Comprendre la propagation du son et de la lumière, et leurs utilisations pour communiquer.",
+    "fiches": [
+        {
+            "title": "Le son et la lumière",
+            "content": "<h3>Le Son</h3><p>C'est une onde mécanique qui a besoin d'un milieu matériel pour se propager. Il ne se propage pas dans le vide. Sa vitesse dans l'air est d'environ 340 m/s.</p><h3>La Lumière</h3><p>Elle se propage dans le vide à 300 000 km/s. Elle permet de voir et de transmettre des informations (fibre optique).</p>"
+        }
+    ],
+    "quiz": [
+        {
+            "question": "Dans quel milieu le son NE PEUT PAS se propager ?",
+            "options": [
+                "Dans l'eau",
+                "Dans l'air",
+                "Dans l'acier",
+                "Dans le vide"
+            ],
+            "correct": 3,
+            "explanation": "Le son est une onde mécanique, il a besoin de matière."
+        }
+    ]
+},
+  {
     "id": "physique-chimie-final",
     "title": "🎯 Grand Quiz Final Type Brevet",
-    "summary": "Série de 31 questions incluant un sujet type Brevet.",
+    "summary": "Série de 10 questions de révision pour le Brevet.",
     "fiches": [],
     "quiz": [
         {
-            "question": "Question de révision générale 1 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
+            "q": "Quelle est la formule chimique de l'eau ?",
+            "o": ["CO2","O2","H2O","H2SO4"],
+            "c": 2,
+            "e": "Deux atomes d'hydrogène et un atome d'oxygène."
         },
         {
-            "question": "Question de révision générale 2 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
+            "q": "Quel est l'état de l'eau à 110°C à pression atmosphérique normale ?",
+            "o": ["Solide","Liquide","Gazeux","Plasma"],
+            "c": 2,
+            "e": "L'eau bout à 100°C et devient de la vapeur d'eau (gaz)."
         },
         {
-            "question": "Question de révision générale 3 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
+            "q": "Quelle est l'unité de mesure de la force ?",
+            "o": ["Le Joule","Le Watt","Le Newton","Le Volt"],
+            "c": 2,
+            "e": "Du nom d'Isaac Newton."
         },
         {
-            "question": "Question de révision générale 4 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
+            "q": "Quel est le symbole du dioxyde de carbone ?",
+            "o": ["CO","CO2","C2O","HO2"],
+            "c": 1,
+            "e": "Un atome de carbone et deux atomes d'oxygène."
         },
         {
-            "question": "Question de révision générale 5 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
+            "q": "Dans un atome, les électrons sont de charge :",
+            "o": ["Positive","Négative","Neutre","Variable"],
+            "c": 1,
+            "e": "Les protons sont positifs, les neutrons sont neutres et les électrons négatifs."
         },
         {
-            "question": "Question de révision générale 6 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
+            "q": "Quelle est la vitesse de la lumière dans le vide ?",
+            "o": ["300 000 km/s","340 m/s","150 000 km/s","3 000 km/s"],
+            "c": 0,
+            "e": "C'est une constante physique fondamentale."
         },
         {
-            "question": "Question de révision générale 7 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
+            "q": "Quel appareil mesure la tension électrique ?",
+            "o": ["L'ampèremètre","Le voltmètre","L'ohmmètre","Le dynamomètre"],
+            "c": 1,
+            "e": "Il se branche en dérivation et mesure en Volts."
         },
         {
-            "question": "Question de révision générale 8 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
+            "q": "La formule P = m x g relie le poids à la :",
+            "o": ["Pression","Vitesse","Masse","Puissance"],
+            "c": 2,
+            "e": "Poids = masse × intensité de la pesanteur."
         },
         {
-            "question": "Question de révision générale 9 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
+            "q": "Si le pH d'une solution est de 3, elle est :",
+            "o": ["Acide","Basique","Neutre","Salée"],
+            "c": 0,
+            "e": "Un pH inférieur à 7 caractérise une solution acide."
         },
         {
-            "question": "Question de révision générale 10 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 11 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 12 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 13 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 14 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 15 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 16 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 17 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 18 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 19 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 20 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 21 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 22 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 23 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 24 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 25 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 26 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 27 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 28 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 29 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "Question de révision générale 30 (Physique-Chimie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La physique-chimie modélise la matière, les forces, et l'énergie."
-        },
-        {
-            "question": "[SUJET TYPE BREVET] On dissout 5g de sel dans 200mL d'eau. Lors de la transformation chimique ou physique, que se passe-t-il pour la masse totale ?",
-            "options": [
-                "La masse diminue",
-                "La masse augmente",
-                "La masse se conserve (205g)",
-                "On ne peut pas savoir"
-            ],
-            "correct": 2,
-            "explanation": "Lors d'une dissolution ou transformation chimique, la masse totale se conserve (Loi de Lavoisier)."
+            "q": "L'énergie cinétique d'un objet dépend de sa masse et de :",
+            "o": ["Sa hauteur","Sa température","Sa vitesse","Son volume"],
+            "c": 2,
+            "e": "Ec = 1/2 × m × v²."
         }
     ]
 }

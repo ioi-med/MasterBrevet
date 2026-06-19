@@ -955,6 +955,30 @@ const FRANCAIS_DATA = {
     }
   ,
 {
+    "id": "francais-supplementaire",
+    "title": "Chapitre Supplémentaire : La Poésie, du lyrisme à l'engagement",
+    "summary": "Découvrir comment la poésie exprime les sentiments personnels et s'engage dans les combats du siècle.",
+    "fiches": [
+        {
+            "title": "Le Lyrisme et l'Engagement",
+            "content": "<h3>Le lyrisme</h3><p>C'est l'expression des sentiments personnels (amour, fuite du temps, tristesse) avec une musicalité particulière (rimes, rythme).</p><h3>La poésie engagée</h3><p>Les poètes utilisent leur art pour défendre une cause (ex: la Résistance pendant la 2nde Guerre Mondiale avec Paul Éluard ou Louis Aragon).</p>"
+        }
+    ],
+    "quiz": [
+        {
+            "question": "Quel terme désigne l'expression des sentiments personnels en poésie ?",
+            "options": [
+                "Le registre épique",
+                "Le registre comique",
+                "Le registre lyrique",
+                "Le registre fantastique"
+            ],
+            "correct": 2,
+            "explanation": "Le lyrisme est caractérisé par l'expression des émotions."
+        }
+    ]
+},
+  {
     "id": "francais-final",
     "title": "🎯 Grand Quiz Final Type Brevet",
     "summary": "Série de 31 questions incluant un sujet type Brevet.",

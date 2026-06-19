@@ -487,351 +487,94 @@ const GEOGRAPHIE_DATA = {
     }
   ,
 {
+    "id": "geographie-supplementaire",
+    "title": "Chapitre Supplémentaire : La France dans le monde",
+    "summary": "L'influence culturelle, géopolitique et économique de la France à l'échelle mondiale.",
+    "fiches": [
+        {
+            "title": "Le rayonnement de la France",
+            "content": "<h3>Une puissance géopolitique et culturelle</h3><p>La France est membre permanent du Conseil de Sécurité de l'ONU. Elle possède le 2ème espace maritime mondial (ZEE). La francophonie et la culture (gastronomie, luxe) renforcent son influence.</p>"
+        }
+    ],
+    "quiz": [
+        {
+            "question": "Quelle institution internationale accorde un siège permanent à la France ?",
+            "options": [
+                "L'UNICEF",
+                "Le Conseil de Sécurité de l'ONU",
+                "L'OMS",
+                "Le FMI"
+            ],
+            "correct": 1,
+            "explanation": "La France y possède un droit de véto."
+        }
+    ]
+},
+  {
     "id": "geographie-final",
     "title": "🎯 Grand Quiz Final Type Brevet",
-    "summary": "Série de 31 questions incluant un sujet type Brevet.",
+    "summary": "Série de 10 questions de révision pour le Brevet.",
     "fiches": [],
     "quiz": [
         {
-            "question": "Question de révision générale 1 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
+            "q": "Quelle est la capitale de la France ?",
+            "o": ["Lyon","Marseille","Paris","Toulouse"],
+            "c": 2,
+            "e": "Paris est la capitale et la ville la plus peuplée de France."
         },
         {
-            "question": "Question de révision générale 2 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
+            "q": "Qu'est-ce qu'une aire urbaine ?",
+            "o": ["Un centre-ville","Un espace constitué d'un pôle urbain et d'une couronne périurbaine","Une zone rurale","Une banlieue"],
+            "c": 1,
+            "e": "L'aire urbaine englobe le pôle urbain (ville-centre + banlieue) et les communes périurbaines."
         },
         {
-            "question": "Question de révision générale 3 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
+            "q": "Quel est le fleuve qui traverse Paris ?",
+            "o": ["Le Rhône","La Garonne","La Seine","La Loire"],
+            "c": 2,
+            "e": "La Seine traverse Paris."
         },
         {
-            "question": "Question de révision générale 4 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
+            "q": "Où se situe la mégalopole européenne ?",
+            "o": ["De Londres à Milan","De Paris à Berlin","De Madrid à Rome","De Lisbonne à Varsovie"],
+            "c": 0,
+            "e": "Elle s'étend du sud-est de l'Angleterre (Londres) au nord de l'Italie (Milan)."
         },
         {
-            "question": "Question de révision générale 5 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
+            "q": "Quel est le premier espace agricole français ?",
+            "o": ["Le Bassin aquitain","Le Bassin parisien","Le couloir rhodanien","La Bretagne"],
+            "c": 1,
+            "e": "Le Bassin parisien est la plus grande région de grande culture en France."
         },
         {
-            "question": "Question de révision générale 6 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
+            "q": "Que signifie la diagonale du vide ?",
+            "o": ["Une zone très peuplée","Une zone de forte densité industrielle","Une zone de faible densité de population","Une région montagneuse"],
+            "c": 2,
+            "e": "Elle traverse la France du nord-est au sud-ouest et se caractérise par de faibles densités de population."
         },
         {
-            "question": "Question de révision générale 7 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
+            "q": "Quelle région française est la plus touristique ?",
+            "o": ["La Bretagne","L'Île-de-France","La région PACA","La Normandie"],
+            "c": 1,
+            "e": "Grâce à Paris et Disneyland, c'est la 1ère région touristique."
         },
         {
-            "question": "Question de révision générale 8 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
+            "q": "Comment s'appelle l'ensemble géographique réunissant les DROM ?",
+            "o": ["La France métropolitaine","La France d'outre-mer","La Francophonie","L'Hexagone"],
+            "c": 1,
+            "e": "Il s'agit des territoires d'outre-mer (Guadeloupe, Martinique, Guyane, La Réunion, Mayotte)."
         },
         {
-            "question": "Question de révision générale 9 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
+            "q": "Quel pays européen est le principal partenaire économique de la France ?",
+            "o": ["L'Italie","L'Espagne","L'Allemagne","Le Royaume-Uni"],
+            "c": 2,
+            "e": "L'Allemagne est le premier partenaire commercial de la France."
         },
         {
-            "question": "Question de révision générale 10 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 11 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 12 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 13 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 14 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 15 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 16 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 17 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 18 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 19 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 20 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 21 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 22 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 23 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 24 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 25 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 26 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 27 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 28 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 29 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "Question de révision générale 30 (Géographie)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "La géographie étudie les dynamiques des territoires (France, UE, etc.)."
-        },
-        {
-            "question": "[SUJET TYPE BREVET] Quels sont les principaux facteurs de localisation des industries de haute technologie (technopôles) en France ?",
-            "options": [
-                "Près des mines de charbon",
-                "Près des métropoles, des centres de recherche et des universités",
-                "Uniquement à la campagne pour l'espace",
-                "Dans les espaces de haute montagne"
-            ],
-            "correct": 1,
-            "explanation": "Les technopôles ont besoin d'infrastructures de communication, d'ingénieurs et de chercheurs."
+            "q": "Où se trouve le Parlement européen ?",
+            "o": ["Paris","Bruxelles","Strasbourg","Genève"],
+            "c": 2,
+            "e": "Le Parlement européen siège à Strasbourg (et à Bruxelles)."
         }
     ]
 }

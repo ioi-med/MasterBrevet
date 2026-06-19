@@ -68,351 +68,129 @@ const SVT_DATA = {
     }
   ,
 {
+    "id": "svt-ch3",
+    "title": "La planète Terre, l'environnement et l'action humaine",
+    "summary": "Météorologie, climatologie, risques naturels, gestion des ressources...",
+    "fiches": [
+        {
+            "title": "Risques naturels et technologiques",
+            "content": "<h3>Les séismes et volcans</h3><p>Les séismes sont dus à une rupture brutale des roches en profondeur, libérant de l'énergie sous forme d'ondes sismiques. Le volcanisme est l'arrivée en surface de magma contenant des gaz. L'activité humaine peut aussi engendrer des risques technologiques (pollution, accidents industriels).</p>"
+        },
+        {
+            "title": "Changement climatique",
+            "content": "<h3>L'impact humain</h3><p>L'augmentation de l'effet de serre, causée par les émissions de dioxyde de carbone (CO2) et de méthane, entraîne un réchauffement climatique global. Cela provoque la fonte des glaces, la montée du niveau de la mer et des événements météorologiques extrêmes.</p>"
+        }
+    ],
+    "quiz": [
+        {
+            "question": "Quelle est la principale cause du réchauffement climatique actuel ?",
+            "options": ["L'activité volcanique", "Les variations de l'orbite terrestre", "L'augmentation des gaz à effet de serre par l'activité humaine", "Le Soleil qui chauffe plus"],
+            "correct": 2,
+            "explanation": "Les activités humaines, principalement l'utilisation de combustibles fossiles, augmentent la concentration des gaz à effet de serre (comme le CO2) dans l'atmosphère."
+        },
+        {
+            "question": "Qu'est-ce que l'épicentre d'un séisme ?",
+            "options": ["Le point en profondeur où se produit la rupture", "Le point à la surface de la Terre situé à la verticale du foyer", "La zone la moins touchée par le séisme", "Le type d'onde sismique"],
+            "correct": 1,
+            "explanation": "L'épicentre est le point en surface où les secousses sont généralement les plus fortes, juste au-dessus du foyer."
+        },
+        {
+            "question": "Quel comportement adopter en cas de séisme si l'on est à l'intérieur ?",
+            "options": ["S'abriter sous une table solide", "Courir vers l'extérieur", "Prendre l'ascenseur", "Allumer un feu"],
+            "correct": 0,
+            "explanation": "Il faut s'abriter sous un meuble solide pour se protéger de la chute d'objets."
+        }
+    ]
+},
+{
+    "id": "svt-supplementaire",
+    "title": "Chapitre Supplémentaire : L'évolution du vivant",
+    "summary": "L'histoire de la Terre, l'apparition de la vie et les mécanismes de l'évolution.",
+    "fiches": [
+        {
+            "title": "La théorie de l'évolution",
+            "content": "<h3>La sélection naturelle</h3><p>Les individus d'une espèce présentent des variations génétiques. L'environnement favorise ceux qui sont les mieux adaptés, qui survivent et se reproduisent. C'est le moteur de l'évolution.</p>"
+        }
+    ],
+    "quiz": [
+        {
+            "question": "Qui a formulé la théorie de la sélection naturelle ?",
+            "options": [
+                "Pasteur",
+                "Mendel",
+                "Darwin",
+                "Lamarck"
+            ],
+            "correct": 2,
+            "explanation": "Charles Darwin a publié 'L'Origine des espèces' en 1859."
+        }
+    ]
+},
+  {
     "id": "svt-final",
     "title": "🎯 Grand Quiz Final Type Brevet",
-    "summary": "Série de 31 questions incluant un sujet type Brevet.",
+    "summary": "Série de 10 questions de révision pour le Brevet.",
     "fiches": [],
     "quiz": [
         {
-            "question": "Question de révision générale 1 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
+            "q": "Où se trouve l'information génétique dans une cellule animale ?",
+            "o": ["Dans le cytoplasme","Dans la membrane","Dans le noyau","Dans les mitochondries"],
+            "c": 2,
+            "e": "L'ADN est contenu dans le noyau des cellules."
         },
         {
-            "question": "Question de révision générale 2 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
+            "q": "Combien de chromosomes contient une cellule humaine normale ?",
+            "o": ["23","46","48","24"],
+            "c": 1,
+            "e": "Elle contient 46 chromosomes (23 paires)."
         },
         {
-            "question": "Question de révision générale 3 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
+            "q": "Comment s'appelle le phénomène par lequel les plaques tectoniques s'écartent ?",
+            "o": ["La subduction","La collision","La divergence (ou accrétion)","L'érosion"],
+            "c": 2,
+            "e": "Au niveau des dorsales océaniques, les plaques s'écartent."
         },
         {
-            "question": "Question de révision générale 4 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
+            "q": "Quelle cellule reproductrice est produite par l'homme ?",
+            "o": ["L'ovule","Le spermatozoïde","Le pollen","Le zygote"],
+            "c": 1,
+            "e": "C'est le gamète mâle."
         },
         {
-            "question": "Question de révision générale 5 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
+            "q": "Comment s'appelle le processus par lequel les plantes produisent leur nourriture ?",
+            "o": ["La respiration","La digestion","La photosynthèse","La fermentation"],
+            "c": 2,
+            "e": "Elles utilisent l'énergie solaire, le CO2 et l'eau pour produire de la matière organique."
         },
         {
-            "question": "Question de révision générale 6 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
+            "q": "Quel est le rôle des globules blancs ?",
+            "o": ["Transporter l'oxygène","Coaguler le sang","Défendre l'organisme contre les infections","Transporter les nutriments"],
+            "c": 2,
+            "e": "Ils font partie du système immunitaire."
         },
         {
-            "question": "Question de révision générale 7 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
+            "q": "Qu'est-ce qu'un séisme ?",
+            "o": ["Une éruption volcanique","Un tremblement de terre causé par la rupture de roches","Un tsunami","Une tornade"],
+            "c": 1,
+            "e": "Il libère de l'énergie sous forme d'ondes sismiques."
         },
         {
-            "question": "Question de révision générale 8 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
+            "q": "Qui a formulé la théorie de l'évolution par sélection naturelle ?",
+            "o": ["Louis Pasteur","Charles Darwin","Gregor Mendel","Marie Curie"],
+            "c": 1,
+            "e": "Darwin a publié cette théorie en 1859 dans L'Origine des espèces."
         },
         {
-            "question": "Question de révision générale 9 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
+            "q": "Quel gaz est absorbé lors de la respiration humaine ?",
+            "o": ["Le dioxyde de carbone","L'azote","Le dioxygène","L'hydrogène"],
+            "c": 2,
+            "e": "Le corps absorbe l'O2 et rejette le CO2."
         },
         {
-            "question": "Question de révision générale 10 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 11 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 12 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 13 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 14 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 15 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 16 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 17 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 18 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 19 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 20 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 2,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 21 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 22 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 23 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 1,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 24 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 25 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 26 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 27 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 28 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 29 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 3,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "Question de révision générale 30 (SVT)",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct": 0,
-            "explanation": "Les SVT étudient le vivant, le corps humain, et la Terre."
-        },
-        {
-            "question": "[SUJET TYPE BREVET] Comment l'information génétique est-elle transmise lors de la division cellulaire (mitose) ?",
-            "options": [
-                "La cellule se coupe au hasard",
-                "Les chromosomes sont doublés puis répartis également",
-                "La cellule perd la moitié de ses gènes",
-                "L'ADN se transforme en ARN"
-            ],
-            "correct": 1,
-            "explanation": "Chaque cellule fille reçoit une copie exacte des 46 chromosomes de la cellule mère."
+            "q": "Où a lieu la fécondation chez la femme ?",
+            "o": ["Dans l'utérus","Dans le vagin","Dans les trompes de Fallope","Dans les ovaires"],
+            "c": 2,
+            "e": "C'est là que le spermatozoïde rencontre l'ovule."
         }
     ]
 }

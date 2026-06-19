@@ -756,6 +756,30 @@ const MATHS_DATA = {
     }
   ,
 {
+    "id": "maths-supplementaire",
+    "title": "Chapitre Supplémentaire : Probabilités et Statistiques",
+    "summary": "Calculer des probabilités simples, moyennes, médianes et analyser des séries statistiques.",
+    "fiches": [
+        {
+            "title": "Les Probabilités",
+            "content": "<h3>Probabilités simples</h3><p>La probabilité d'un événement est comprise entre 0 et 1. C'est le nombre d'issues favorables divisé par le nombre total d'issues.</p><h3>La Médiane</h3><p>C'est la valeur qui partage une série statistique ordonnée en deux groupes de même effectif.</p>"
+        }
+    ],
+    "quiz": [
+        {
+            "question": "Quelle est la probabilité d'obtenir un nombre pair avec un dé classique à 6 faces ?",
+            "options": [
+                "1/6",
+                "1/2",
+                "1/3",
+                "2/3"
+            ],
+            "correct": 1,
+            "explanation": "Il y a 3 nombres pairs (2, 4, 6) sur 6 faces, donc 3/6 = 1/2."
+        }
+    ]
+},
+  {
     "id": "maths-final",
     "title": "🎯 Grand Quiz Final Type Brevet",
     "summary": "Série de 31 questions incluant un sujet type Brevet.",

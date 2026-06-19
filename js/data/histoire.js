@@ -1043,6 +1043,30 @@ const HISTOIRE_DATA = {
     }
   ,
 {
+    "id": "histoire-supplementaire",
+    "title": "Chapitre Supplémentaire : Enjeux et conflits depuis 1989",
+    "summary": "Comprendre le monde contemporain de la chute du mur de Berlin à nos jours.",
+    "fiches": [
+        {
+            "title": "La fin de la Guerre froide et ses conséquences",
+            "content": "<h3>Un nouveau monde</h3><p>La chute du mur de Berlin (1989) et l'éclatement de l'URSS (1991) mettent fin au monde bipolaire. Les États-Unis deviennent la seule hyperpuissance avant l'émergence d'un monde multipolaire (Chine, etc.).</p>"
+        }
+    ],
+    "quiz": [
+        {
+            "question": "En quelle année le mur de Berlin a-t-il chuté ?",
+            "options": [
+                "1961",
+                "1989",
+                "1991",
+                "2001"
+            ],
+            "correct": 1,
+            "explanation": "Il chute en novembre 1989, marquant la fin de la Guerre froide."
+        }
+    ]
+},
+  {
     "id": "histoire-final",
     "title": "🎯 Grand Quiz Final Type Brevet",
     "summary": "Série de 31 questions incluant un sujet type Brevet.",

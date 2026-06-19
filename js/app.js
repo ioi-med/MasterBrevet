@@ -16,6 +16,7 @@ function initSubjects() {
     typeof PHYSIQUE_CHIMIE_DATA !== 'undefined' ? PHYSIQUE_CHIMIE_DATA : null,
     typeof SVT_DATA !== 'undefined' ? SVT_DATA : null,
     typeof TECHNOLOGIE_DATA !== 'undefined' ? TECHNOLOGIE_DATA : null,
+    typeof QUESTION_DNB_DATA !== 'undefined' ? QUESTION_DNB_DATA : null,
   ];
 
   dataVars.forEach(data => {
@@ -779,8 +780,39 @@ function importProgress(event) {
   reader.readAsText(file);
 }
 
+// ===== Theme Management =====
+const THEME_STORAGE_KEY = 'brevetmaster_theme';
+
+function initTheme() {
+  const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+  if (savedTheme === 'dark' || (!savedTheme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    const themeIcon = document.getElementById('theme-icon');
+    if (themeIcon) themeIcon.textContent = '☀️';
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+    const themeIcon = document.getElementById('theme-icon');
+    if (themeIcon) themeIcon.textContent = '🌙';
+  }
+}
+
+function toggleTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const themeIcon = document.getElementById('theme-icon');
+  if (isDark) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem(THEME_STORAGE_KEY, 'light');
+    if (themeIcon) themeIcon.textContent = '🌙';
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem(THEME_STORAGE_KEY, 'dark');
+    if (themeIcon) themeIcon.textContent = '☀️';
+  }
+}
+
 // ===== Initialize App =====
 function init() {
+  initTheme();
   initSubjects();
   renderSubjectsGrid();
   updateStats();
