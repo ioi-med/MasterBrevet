@@ -7,6 +7,15 @@
     <meta name="keywords" content="brevet, DNB, révision, collège, 3ème, français, mathématiques, histoire, géographie, sciences, quiz">
     <title>BrevetMaster — Révise ton Brevet DNB</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+    
+    <!-- PWA / Mobile Web App -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#f8f9fa">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="BrevetMaster">
+    <link rel="apple-touch-icon" href="img/logo.jpg">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -135,7 +144,21 @@
     <script src="js/data/svt.js"></script>
     <script src="js/data/technologie.js"></script>
     <script src="js/data/question-dnb.js"></script>
-    <!-- Main App Script -->
+
+    <!-- Main Logic -->
     <script src="js/app.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js').then(reg => {
+            console.log('Service Worker registered', reg);
+          }).catch(err => {
+            console.log('Service Worker registration failed', err);
+          });
+        });
+      }
+    </script>
 </body>
 </html>
